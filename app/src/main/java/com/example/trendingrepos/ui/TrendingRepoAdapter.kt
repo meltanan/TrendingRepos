@@ -1,5 +1,6 @@
 package com.example.trendingrepos.ui
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,14 +20,15 @@ class TrendingRepoAdapter(private val trendingRepos: List<RepoItem>, private val
         return ViewHolder(view)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         Glide.with(holder.imageView).load(trendingRepos[position].owner?.image).into(holder.imageView)
         holder.name.text = "Name: ${trendingRepos[position].name}"
         holder.watchers.text = "Watchers: ${trendingRepos[position].watchers.toString()}"
-        holder.language.text = "Language: ${trendingRepos[position].language}"
-        holder.privacy.text = "Visibility: ${trendingRepos[position].visibility}"
+        holder.language.text = "Language: ${trendingRepos[position].language?: "N/A"}"
+        holder.privacy.text = "Visibility: ${trendingRepos[position].visibility?: "N/A"}"
         holder.openIssue.text = "Open issue: ${trendingRepos[position].openIssues.toString()}"
-        holder.defaultBranch.text = "Branch: ${trendingRepos[position].defaultBranch}"
+        holder.defaultBranch.text = "Branch: ${trendingRepos[position].defaultBranch?: "N/A"}"
         holder.cardView.setOnClickListener{
             listener.onItemSelect(trendingRepos[position].owner?.url)
         }

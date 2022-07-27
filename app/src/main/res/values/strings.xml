@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TrendingRepos</string>
+    <string name="app_name">Trending Github Repos</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
