@@ -9,12 +9,19 @@
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/search_editText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:hint="Enter Repo Name"
+        android:textColorHint="@color/colorPlaceholder"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:background="@drawable/edit_text_background"
         app:layout_constraintVertical_bias="0.896" />
 
     <com.google.android.material.button.MaterialButton
@@ -23,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="Search"
+        android:background="@drawable/button_background"
         app:layout_constraintTop_toBottomOf="@id/search_editText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
