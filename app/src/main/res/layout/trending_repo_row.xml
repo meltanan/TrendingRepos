@@ -43,7 +43,7 @@
             app:layout_constraintStart_toEndOf="@+id/repo_image_view"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/repo_watchers_text_view"
             style="@style/textViewBold"
             android:layout_width="wrap_content"
@@ -58,7 +58,21 @@
             app:layout_constraintTop_toBottomOf="@+id/repo_name_text_view"
             app:layout_constraintVertical_bias="1.0" />
 
-        <TextView
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="40dp"
+            android:background="#24737373"
+            app:layout_constraintBottom_toTopOf="@id/repo_open_issues_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repo_name_text_view"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/repo_visibility_text_view"
             style="@style/textView"
             android:layout_width="wrap_content"
@@ -71,7 +85,7 @@
             app:layout_constraintStart_toEndOf="@+id/repo_open_issues_text_view"
             app:layout_constraintTop_toBottomOf="@id/view" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/repo_open_issues_text_view"
             style="@style/textView"
             android:layout_width="wrap_content"
@@ -85,7 +99,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/repo_default_branch_text_view"
             style="@style/textView"
             android:layout_width="wrap_content"
@@ -98,7 +112,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/repo_open_issues_text_view" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/repo_language_text_view"
             style="@style/textViewBold"
             android:layout_width="wrap_content"
@@ -114,19 +128,7 @@
             app:layout_constraintTop_toBottomOf="@+id/repo_image_view"
             app:layout_constraintVertical_bias="0.702" />
 
-        <View
-            android:id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="40dp"
-            android:background="#24737373"
-            app:layout_constraintBottom_toTopOf="@id/repo_open_issues_text_view"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/repo_name_text_view"
-            app:layout_constraintVertical_bias="1.0" />
+
 
         <View
             android:id="@+id/view_bold"
