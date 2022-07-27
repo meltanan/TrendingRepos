@@ -8,7 +8,9 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.myapplication.data.RepoItem
 import com.example.trendingrepos.R
+import com.example.trendingrepos.SelectListener
 
 class TrendingRepoAdapter(private val trendingRepos: List<RepoItem>, private val listener: SelectListener): RecyclerView.Adapter<TrendingRepoAdapter.ViewHolder>()  {
     private val topReposLimit = 3

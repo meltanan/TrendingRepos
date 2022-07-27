@@ -8,6 +8,8 @@ import android.widget.EditText
 import androidx.activity.viewModels
 import androidx.lifecycle.viewModelScope
 import com.example.trendingrepos.R
+import com.example.trendingrepos.addFragment
+import com.example.trendingrepos.showToast
 import kotlinx.coroutines.launch
 
 class HomeActivity() : AppCompatActivity() {
